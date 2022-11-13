@@ -8,7 +8,7 @@
   </head>
   <body>
   <header>
-  <div class="bg-dark collapse show" id="navbarHeader">
+  <div class="bg-dark collapse" id="navbarHeader">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
@@ -38,11 +38,11 @@
     </div>
   </div>
 </header>
-
+<br>
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-8 col-12">
-      <div class="card mb-3">
+    <div class="card mb-3">
         <div class="card-header">Información del cliente</div>
         <div class="card-body"
         <form action="">
@@ -56,7 +56,7 @@
         <input type="text" class="form-control" id="empresa" placeholder="Coca-Cola" required>
     </div>
     <div class="col-4">
-    <label for="email">Empresa</label>
+    <label for="email">Correo </label>
         <input type="email" class="form-control" id="email" placeholder="walter@gmail.com" required>
     </div>
  </div>
@@ -65,6 +65,101 @@
 </div>
 
 
+<div class="card">
+  <div class="card-header">Agregar Nuevo Concepto</div>
+  <div class="card-body">
+      <form action="">
+        <div class="form-group row">
+          <div class="col-3">
+            <label for="concepto">Concepto</label>
+            <input type="text" class="form-control" id="concepto" name="concepto" placeholder="Guitarra Electrica" required>
+          </div>
+          <div class="col-3">
+            <label for="tipo">Tipo Producto</label>
+            <select name="tipo" id="tipo" class="form-control">
+              <option value="producto">Producto</option>
+              <option value="servicio">Servicio</option>
+            </select>
+          </div>
+          <div class="col-3">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" max="999999" value="1"  required>
+          </div>
+          <div class="col-3">
+            <label for="precio_unitario">Precio Unitario</label>
+            <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input type="text" class="form-control" id="precio_unitario" name="precio_unitario" placeholder="0.00" required>
+          </div>
+          </div>
+        </div>
+        <br>
+        <button class="btn btn-success" type="submit">Agregar Concepto</button>
+        <button class="btn btn-danger" type="reset">Cancelar</button>
+      </form>
+  </div>
+  </div>
+  </div>
+
+<div class="col-lg-4 col-12">
+  <div class="card">
+    <div class="card-header">Resumen de Cotizacion</div>
+    <div class="card-body">
+      <div class="table-responsive">
+          <table class="table table-hover table-striped table-bordered">
+            <thead>
+              <tr>
+                <th>Concepto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th class="text-right">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Playera</td>
+                <td>1</td>
+                <td>4000</td>
+                <td class="text-right">4000</td>
+              </tr>
+              <tr>
+                <td>Short</td>
+                <td>2</td>
+                <td>20000</td>
+                <td class="text-right">40000</td>
+              </tr>
+            </tbody>
+            <tr>
+              <td class="text-right" colspan="3">Subtotal</td>
+              <td class="text-right">44000</td>
+            </tr>
+            <tr>
+              <td class="text-right" colspan="3">Impuestos</td>
+              <td class="text-right">4400</td>
+            </tr>
+            <tr>
+              <td class="text-right" colspan="3">Envio</td>
+              <td class="text-right">3000</td>
+            </tr>
+            <tr>
+              <td class="text-right" colspan="4"><b>Total</b><h3 class="text-success"><b>51300</b></h3></td>
+            
+            </tr>
+          </table>
+      </div>
+
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-primary">Descargar PDF</button>
+        <button class="btn btn-success">Enviar por correo</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<br>
 
 <footer class="bg-light text-muted py-5">
   <div class="container">
