@@ -1,0 +1,23 @@
+//Generate a random string.
+$token = openssl_random_pseudo_bytes(16);
+ 
+//Convert the binary data into hexadecimal representation.
+$token = bin2hex($token);
+ 
+//Print it out for example purposes.
+echo $token;
+
+
+
+// VIDEO
+agregar el botón de borrar y editar con su data-id
+botón de reiniciar
+agregar variantes de tipo de producto
+
+reiniciar
+borrar 1 por uno
+
+
+
+
+
